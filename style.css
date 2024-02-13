@@ -1,0 +1,277 @@
+* {
+  font-family: 'Nunito Sans';
+  box-sizing: border-box;
+  color: #111a24;
+}
+
+body {
+  margin: 0 auto;
+  padding: 0px;
+  background-color: #f9eded;
+}
+
+h1, p {
+  margin: 0;
+  padding: 5px 0;
+}
+
+footer {
+  background-color: #000;
+  padding: 10px 5px;
+}
+
+footer p {
+  color: #fff;
+  font-size: 12px;
+}
+
+/* Win and lose */
+
+#win,
+#lose {
+  display: none;
+  width: 740px;
+  position: absolute;
+  font-size: 5rem;
+  height: 569px;
+  top: 186px;
+  background-color: #3f418c;
+}
+
+#win h2 {
+  color: antiquewhite;
+  margin: 0;
+  font-size: 7rem;
+  padding: 3%;
+  margin-top: 20%;
+}
+
+#lose h2 {
+  color: rgb(217, 64, 253);
+  margin: 0;
+  font-size: 7rem;
+  padding: 3%;
+  margin-top: 20%;
+}
+
+
+#final-score-w,
+#final-score-l {
+  display: block;
+  font-size: 0.2em;
+  padding: 0 0 1%;
+  color: #fff;
+}
+
+/* #lose {
+  background-image: url(./images/lost.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+#win {
+  background-image: url(./images/win.jpg);
+  background-size: cover;
+  background-position: center;
+} */
+
+/* End of win or lose */
+
+.game-container {
+  max-width: 740px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-top: 30px;
+}
+
+.rounds {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+.round-label {
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 0px;
+  padding: 5px 10px;
+  background: #e5d9d9;
+}
+
+.guess {
+  min-width: 303px;
+  height: 328px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 19px;
+}
+
+.guessing-area {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  margin-bottom: 60px;
+}
+
+.guess-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 20px;
+}
+
+.guess-label {
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.score-label {
+  font-size: 14px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.target-guess {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+#target-number {
+  color: red;
+}
+
+.computer-guess {
+  background-color: #e5d9d9;
+}
+
+#computer-guess {
+  font-size: 50px;
+  font-weight: 700;
+  color: #a5a5a5;
+}
+
+.human-guess {
+  border: 1px solid #979797;
+}
+
+.guess input {
+  height: 90px;
+  width: 90px;
+  font-size: 30px;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 7px;
+}
+
+.number-controls {
+  font-size: 0;
+  margin-bottom: 23px;
+}
+
+.number-control {
+  border: solid 1px #3f418c;
+  display: inline-block;
+  width: 45px;
+  height: 35px;
+  font-size: 24px;
+  font-weight: 700;
+  color: #3f418c;
+  cursor: pointer;
+}
+
+.number-controls button[disabled] {
+  color: #dfdfdf;
+  cursor: default;
+}
+
+.left {
+  border-top-left-radius: 22.5px;
+  border-bottom-left-radius: 22.5px;
+}
+
+.right {
+  border-top-right-radius: 22.5px;
+  border-bottom-right-radius: 22.5px;
+  border-left-width: 0px;
+}
+
+.controls {
+  display: flex;
+  justify-content: space-around;
+}
+
+.button {
+  background-color: #3f418c;
+  color: #fff;
+  cursor: pointer;
+}
+
+#guess {
+  padding: 20px;
+  width: 169px;
+  height: 59px;
+  border: none;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+#next-round {
+  width: 179px;
+  height: 64px;
+  font-size: 18px;
+  font-weight: bold;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 60px;
+}
+  
+.button[disabled] {
+  background-color: #e5d9d9;
+  color: #a0a0a0;
+  cursor: default;
+}
+
+.instructions {
+  background-color: #e5d9d9;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.instruction {
+  width: 180px;
+  padding: 2px;
+  text-align: center;
+}
+
+.instructions h3 {
+  font-size: 14px;
+  margin: 15px 0 0 0;
+}
+
+.instructions p {
+  margin-bottom: 10px;
+}
+
+.winning-text, .winning-text[disabled] {
+  color: #9a0001;
+  font-weight: 700;
+  font-style: oblique;
+}
